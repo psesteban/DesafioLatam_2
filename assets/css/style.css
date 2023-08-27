@@ -1,0 +1,126 @@
+header {
+  font-family: "brush script mt";
+  background-image: url("../imgs/fondo_header.jpg");
+  background-position: bottom right;
+  padding: 1%;
+  font-size: 2em;
+}
+
+body {
+  font-family: "Verdana, sans-serif";
+  background-image: url("../imgs/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  margin: 0.5%;
+}
+.sub {
+  margin: 1%;
+}
+
+.palabras {
+  display: inline-block;
+  color: rgb(240, 38, 38);
+}
+
+.palabras span {
+  font-size: 3em;
+  position: fixed;
+  overflow: hidden;
+  animation: animate 8s linear infinite;
+  opacity: 0;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  2% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  18% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
+.palabras span:nth-child(1) {
+  animation-delay: 0s;
+}
+.palabras span:nth-child(2) {
+  animation-delay: 2s;
+}
+.palabras span:nth-child(3) {
+  animation-delay: 4s;
+}
+.palabras span:nth-child(4) {
+  animation-delay: 6s;
+}
+
+.products {
+  font-size: 2em;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.producto1 {
+  display: flex;
+}
+.producto2 {
+  display: flex;
+}
+.producto3 {
+  display: flex;
+}
+
+main {
+  margin-top: 3%;
+}
+.textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+}
+
+.products img {
+  width: 60%;
+  border-collapse: collapse;
+  padding-left: 4rem;
+  padding-bottom: 2em;
+}
+
+.nombre {
+  text-align: center;
+}
+
+#precio {
+  color: magenta;
+  font-size: 0.7em;
+  text-align: center;
+  border: 1px mediumslateblue dashed;
+  padding: 5%;
+}
+
+footer {
+  height: 3em;
+  line-height: 3em;
+  background-color: rgb(185, 112, 41);
+  color: white;
+  text-align: center;
+  font-weight: 900;
+}
